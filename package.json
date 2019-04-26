@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/monalisabehera31/nodejs_01#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jslint": "^0.12.1"
   }
 }
