@@ -39,15 +39,46 @@ function isEven(num) {
   }
   //If isPrime is true then the number is prime else not
   if(isPrime)
-  console.log(num + " is a Prime Number");
+  return num + " is a Prime Number";
 else
-  console.log(num + " is not a Prime Number");
+return num + " is not a Prime Number";
  }
+
 
 function AddTwoNumbers2 (num1,num2){
     return num1+num2;
+  }
+
+
+
+  //isPalindrome
+  function isPalindrome(number){
+var palindrome = number;
+var reverse=0;
+while (palindrome != 0) {
+  var remainder = palindrome % 10;
+  reverse = reverse * 10 + remainder;
+  palindrome = palindrome / 10;
+}
+  }
+
+
+
+
+  //factorial program
+  function isFactorial(number){
+    var result =1;
+    while(number != 0){
+      result=result*number;
+      number--;
+    }
+    return result;
+  }
+  module.exports.hello = function(){
+    return "Hello1";
   }
 module.exports.fib = fibonacci;
 module.exports.isEven=isEven;
 module.exports.AddTwoNumbers2=AddTwoNumbers2;
 module.exports.isPrime=isPrime;
+module.exports.isFactorial=isFactorial;

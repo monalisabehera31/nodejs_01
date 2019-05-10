@@ -23,3 +23,6 @@ console.log("addition:" + output);
 
 var op2 = program.isPrime(34);
 console.log(op2);
+
+var fact = program.isFactorial(4);
+console.log("factorail: " + fact);
