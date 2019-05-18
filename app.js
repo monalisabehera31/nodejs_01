@@ -26,3 +26,9 @@ console.log(op2);
 
 var fact = program.isFactorial(4);
 console.log("factorail: " + fact);
+
+var isTheSkyBlue = program.isBoolean(true);
+console.log("is boolean " + isTheSkyBlue);
+
+var pi = program.isNumber(31111111.878989);
+console.log("is Number:" + pi);

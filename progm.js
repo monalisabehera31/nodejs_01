@@ -77,8 +77,38 @@ while (palindrome != 0) {
   module.exports.hello = function(){
     return "Hello1";
   }
+
+
+  // type checkig in node js
+
+  function isBoolean(arg){
+    return typeof arg === 'boolean';
+  }
+function isNumber(arg) {
+  if(typeof arg ==='number'){
+    return "number";
+  }else{
+    return "Not a Number";
+  }
+}
+function isString(arg){
+  return typeof arg === 'string';
+}
+function isFunction(arg){
+  return typeof arg === 'function';
+}
+function isObject(arg) {
+  return arg !== null && typeof arg === 'object';
+}
+
 module.exports.fib = fibonacci;
-module.exports.isEven=isEven;
-module.exports.AddTwoNumbers2=AddTwoNumbers2;
-module.exports.isPrime=isPrime;
-module.exports.isFactorial=isFactorial;
+module.exports.isEven= isEven;
+module.exports.AddTwoNumbers2= AddTwoNumbers2;
+module.exports.isPrime= isPrime;
+module.exports.isFactorial= isFactorial;
+module.exports.isBoolean= isBoolean;
+module.exports.isNumber= isNumber;
+module.exports.isString= isString;
+module.exports.isFunction= isFunction;
+module.exports.isObject= isObject;
+
